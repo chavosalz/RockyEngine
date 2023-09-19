@@ -57,7 +57,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>RK_PLATFORM_WINDOWS;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\dev\RockyEngine\src;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\dev\RockyEngine\RockyEngine\src;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -72,7 +72,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>RK_PLATFORM_WINDOWS;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\dev\RockyEngine\src;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\dev\RockyEngine\RockyEngine\src;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -82,15 +82,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ProjectReference Include="..\RockyEngine.vcxproj">
-      <Project>{52ae1b7d-86b5-473d-8bcb-f5d21a24eba8}</Project>
-    </ProjectReference>
+    <ClCompile Include="src\WonderApp.cpp">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\dev\RockyEngine\RockyEngine\src;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\dev\RockyEngine\RockyEngine\src;</AdditionalIncludeDirectories>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\WonderApp.cpp">
-      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\dev\RockyEngine\src;</AdditionalIncludeDirectories>
-      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\dev\RockyEngine\src;</AdditionalIncludeDirectories>
-    </ClCompile>
+    <ProjectReference Include="..\RockyEngine\RockyEngine.vcxproj">
+      <Project>{52ae1b7d-86b5-473d-8bcb-f5d21a24eba8}</Project>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
