@@ -1,0 +1,3 @@
+[submodule "RockyEngine/vendor/spdlog"]
+	path = RockyEngine/vendor/spdlog
+	url = https://github.com/gabime/spdlog

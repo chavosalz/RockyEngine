@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="RockyEngine">
+      <UniqueIdentifier>{C3EB8F3A-2FA1-0830-B895-0207244AFF33}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RockyEngine\Events">
+      <UniqueIdentifier>{475EB413-3342-7569-9CA2-6FBC88A55FEB}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\RockyEngine.h" />
+    <ClInclude Include="src\RockyEngine\Application.h">
+      <Filter>RockyEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\RockyEngine\Core.h">
+      <Filter>RockyEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\RockyEngine\EntryPoint.h">
+      <Filter>RockyEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\RockyEngine\Events\ApplicationEvent.h">
+      <Filter>RockyEngine\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\RockyEngine\Events\Event.h">
+      <Filter>RockyEngine\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\RockyEngine\Events\KeyEvent.h">
+      <Filter>RockyEngine\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\RockyEngine\Events\MouseEvent.h">
+      <Filter>RockyEngine\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\RockyEngine\Log.h">
+      <Filter>RockyEngine</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\RockyEngine\Application.cpp">
+      <Filter>RockyEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\RockyEngine\Log.cpp">
+      <Filter>RockyEngine</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
